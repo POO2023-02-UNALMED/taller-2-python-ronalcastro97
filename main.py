@@ -1,12 +1,12 @@
 class Auto:
-    def __init__(self,modelo,precio,asientos,marca,motor,registro,cantidadCreados):
+    def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
         self.asientos=asientos
         self.marca=marca
         self.motor=motor
         self.registro=registro
-        self.cantidadCreados=cantidadCreados
+        self.cantidadCreados=1
     def cantidadAsientos(self):
         cont=0
         for asiento in self.asientos:
@@ -23,10 +23,6 @@ class Auto:
         else:
             return "Las piezas no son originales"
           
-            
-
-    
-
 
 class Asiento:
     def __init__(self,color,precio,registro):
