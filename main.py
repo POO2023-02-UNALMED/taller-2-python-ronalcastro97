@@ -19,10 +19,9 @@ class Motor:
         self.registro=registro
 
     def asignarTipo(self,tipo):
-        if self.tipo=="electrico":
+        if self.tipo=="electrico" or self.tipo=="gasolina":
             self.tipo=tipo
-        elif self.tipo=="gasolina":
-            self.tipo=tipo
+
 
 class Auto:
     def __init__(self,modelo,precio,asientos,marca,motor,registro):
